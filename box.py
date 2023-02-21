@@ -26,4 +26,13 @@ robot.move_pose(point)
 point = PoseObject(x = 0.1027, y = 0.0072, z = 0.1624, roll = -0.114, pitch = 1.447, yaw = 0.243)
 robot.move_pose(point)
 
+robot.execute_trajectory_from_poses_and_joints(
+   list_pose_joints = [[0.1303, 0.0150, 0.1948, 0.267, 1.514, 0.426],
+                       [0.3013, -0.0837, 0.0313, -2.337, 1.547, -2.451],
+                       [0.2893, 0.1251, 0.0095, -2.662, 1.479, -1.869],
+                       [0.1013, 0.1069, 0.0238, 2.519, 1.423,  -2.371]],
+   list_type = ['pose', 'pose', 'pose', 'pose'],
+   dist_smoothing = 0.01
+)
+
 robot.close_connection()
