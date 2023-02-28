@@ -1,7 +1,7 @@
 from pyniryo2 import *
 
-#robot = NiryoRobot("192.168.6.50")
-robot = NiryoRobot("localhost")
+robot = NiryoRobot("192.168.6.50")
+#robot = NiryoRobot("localhost")
 robot.arm.calibrate_auto()
 robot.tool.update_tool()
 conveyor_id = robot.conveyor.set_conveyor()
