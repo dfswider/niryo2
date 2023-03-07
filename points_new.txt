@@ -1,5 +1,3 @@
-from pyniryo2 import *
-
 source_points = []
 upper_source_points = []
 destination_points = []
@@ -59,54 +57,3 @@ upper_destination_points.append(PoseObject(x=-0.0962, y=-0.2640, z=0.1, roll=1.9
 upper_destination_points.append(PoseObject(x=-0.0973, y=-0.3226, z=0.1, roll=1.378,  pitch=1.501, yaw=-0.234))
 upper_destination_points.append(PoseObject(x=-0.1590, y=-0.2586, z=0.1, roll=1.513,  pitch=1.502, yaw=-0.141))
 upper_destination_points.append(PoseObject(x=-0.1647, y=-0.3254, z=0.1, roll=2.650,  pitch=1.473, yaw=1.112))
-
-def connect_and_calibrate():
-    r = NiryoRobot("192.168.6.50")
-    #robot = NiryoRobot("localhost")
-    r.arm.calibrate_auto()
-    r.tool.update_tool()
-    return r
-
-robot = connect_and_calibrate()
-
-home = PoseObject(x=0.1402, y=0.0000, z=0.2033, roll=0.002, pitch=0.751, yaw=0.000)
-
-conveyor_id = robot.conveyor.set_conveyor()
-robot.conveyor.run_conveyor(conveyor_id, speed=v, direction=ConveyorDirection.FORWARD)
-
-for i in range(0, 10):
-    robot.arm.move_pose(p1_before_pick)
-    robot.arm.move_pose(upper_source_points[i])
-    robot.arm.move_pose(source_points[i])
-    robot.tool.grasp_with_tool()
-    robot.arm.move_pose(upper_source_points[i])
-    robot.arm.move_pose(p1_before_pick)
-    robot.conveyor.stop_conveyor(conveyor_id)
-    robot.arm.move_pose(p2_release_to_conveyor)
-    robot.tool.release_with_tool()
-    robot.arm.move_pose(p1_before_pick)
-    robot.conveyor.run_conveyor(conveyor_id, speed=v, direction=ConveyorDirection.FORWARD)
-
-    # robot.arm.move_pose(p1_before_pick)
-
-robot.arm.move_pose(p3_after_release_to_conveyor)
-
-
-for i in range(0, 10):
-    robot.conveyor.stop_conveyor(conveyor_id)
-    robot.arm.move_pose(p4_before_pick_from_conveyor)
-    # pick it!!!
-    robot.arm.move_pose(p5_after_pick_from_conveyor)
-    robot.conveyor.run_conveyor(conveyor_id, speed=v, direction=ConveyorDirection.FORWARD)
-    robot.arm.move_pose(p6_before_release)
-    robot.arm.move_pose(upper_destination_points[i])
-    robot.arm.move_pose(destination_points[i])
-    # release to box
-    robot.arm.move_pose(upper_destination_points[i])
-    robot.arm.move_pose(p6_before_release)
-
-robot.arm.move_pose(home)
-
-robot.conveyor.stop_conveyor(conveyor_id)
-robot.conveyor.unset_conveyor(conveyor_id)
-robot.end()
