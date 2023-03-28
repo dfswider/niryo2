@@ -1,5 +1,5 @@
-in_f = open("points_saved.txt", "r")
-out_f = open("points1.txt", "a")
+in_f = open("small_points.txt", "r")
+out_f = open("points5.txt", "a")
 
 l = in_f.readlines()
 

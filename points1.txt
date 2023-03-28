@@ -1,4 +1,4 @@
-source_points.append(PoseObject(x = 0.0759, y = 0.3614, z = 0.0343, roll = 0.520, pitch = 1.544, yaw = 0.657))
+source_points.append(PoseObject(x = 0.0760, y = 0.3614, z = 0.0343, roll = 0.520, pitch = 1.544, yaw = 0.657))
 source_points.append(PoseObject(x = 0.0806, y = 0.3018, z = 0.0363, roll = -1.161, pitch = 1.537, yaw = -0.987))
 source_points.append(PoseObject(x = 0.0201, y = 0.2992, z = 0.0347, roll = -2.339, pitch = 1.526, yaw = -1.972))
 source_points.append(PoseObject(x = 0.0124, y = 0.3540, z = 0.0334, roll = 0.105, pitch = 1.519, yaw = 0.208))

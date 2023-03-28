@@ -7,39 +7,36 @@ destination_points = []
 upper_destination_points = []
 v = 15
 
-source_points.append(PoseObject(x = 0.0543, y = 0.3835, z = 0.2364, roll = 3.035, pitch = -1.395, yaw = 1.180))
-source_points.append(PoseObject(x = 0.0518, y = 0.2812, z = 0.3476, roll = -0.327, pitch = -1.427, yaw = -1.775))
-source_points.append(PoseObject(x = -0.0184, y = 0.3723, z = 0.2591, roll = 2.363, pitch = -1.485, yaw = 2.280))
-source_points.append(PoseObject(x = -0.0089, y = 0.2765, z = 0.3513, roll = -0.066, pitch = -1.330, yaw = -1.660))
-source_points.append(PoseObject(x = -0.0791, y = 0.3614, z = 0.2620, roll = -2.540, pitch = -1.521, yaw = 1.260))
-source_points.append(PoseObject(x = -0.0605, y = 0.2587, z = 0.3574, roll = -0.025, pitch = -1.283, yaw = -1.224))
-source_points.append(PoseObject(x = -0.1473, y = 0.3572, z = 0.2337, roll = -2.742, pitch = -1.440, yaw = 1.806))
-source_points.append(PoseObject(x = -0.1154, y = 0.2600, z = 0.3452, roll = 0.017, pitch = -1.341, yaw = -0.900))
-source_points.append(PoseObject(x = -0.2149, y = 0.3499, z = 0.1810, roll = -2.745, pitch = -1.308, yaw = 2.102))
-source_points.append(PoseObject(x = -0.1794, y = 0.2701, z = 0.3148, roll = -0.389, pitch = -1.422, yaw = -0.169))
+source_points.append(PoseObject(x = 0.0447, y = 0.3294, z = 0.0311, roll = -2.388, pitch = 1.536, yaw = -0.867))
+source_points.append(PoseObject(x = 0.0474, y = 0.2793, z = 0.0336, roll = 3.007, pitch = 1.494, yaw = -2.095))
+source_points.append(PoseObject(x = -0.0085, y = 0.3261, z = 0.0310, roll = -2.945, pitch = 1.498, yaw = -1.556))
+source_points.append(PoseObject(x = -0.0016, y = 0.2781, z = 0.0353, roll = 2.854, pitch = 1.469, yaw = -1.872))
+source_points.append(PoseObject(x = -0.0586, y = 0.3242, z = 0.0337, roll = 3.092, pitch = 1.479, yaw = -1.490))
+source_points.append(PoseObject(x = -0.0564, y = 0.2740, z = 0.0333, roll = 2.937, pitch = 1.505, yaw = -1.747))
+source_points.append(PoseObject(x = -0.1128, y = 0.3189, z = 0.0311, roll = -3.076, pitch = 1.483, yaw = -1.463))
+source_points.append(PoseObject(x = -0.1065, y = 0.2707, z = 0.0341, roll = 2.945, pitch = 1.441, yaw = -1.734))
+source_points.append(PoseObject(x = -0.1611, y = 0.3136, z = 0.0306, roll = -2.885, pitch = 1.494, yaw = -1.272))
+source_points.append(PoseObject(x = -0.1557, y = 0.2641, z = 0.0303, roll = 2.933, pitch = 1.471, yaw = -1.738))
 
-
-upper_source_points.append(PoseObject(x = 0.0543, y = 0.3835, z = 0.2364, roll = 3.035, pitch = -1.395, yaw = 1.180))
-upper_source_points.append(PoseObject(x = 0.0518, y = 0.2812, z = 0.3476, roll = -0.327, pitch = -1.427, yaw = -1.775))
-upper_source_points.append(PoseObject(x = -0.0184, y = 0.3723, z = 0.2591, roll = 2.363, pitch = -1.485, yaw = 2.280))
-upper_source_points.append(PoseObject(x = -0.0089, y = 0.2765, z = 0.3513, roll = -0.066, pitch = -1.330, yaw = -1.660))
-upper_source_points.append(PoseObject(x = -0.0791, y = 0.3614, z = 0.2620, roll = -2.540, pitch = -1.521, yaw = 1.260))
-upper_source_points.append(PoseObject(x = -0.0605, y = 0.2587, z = 0.3574, roll = -0.025, pitch = -1.283, yaw = -1.224))
-upper_source_points.append(PoseObject(x = -0.1473, y = 0.3572, z = 0.2337, roll = -2.742, pitch = -1.440, yaw = 1.806))
-upper_source_points.append(PoseObject(x = -0.1154, y = 0.2600, z = 0.3452, roll = 0.017, pitch = -1.341, yaw = -0.900))
-upper_source_points.append(PoseObject(x = -0.2149, y = 0.3499, z = 0.1810, roll = -2.745, pitch = -1.308, yaw = 2.102))
-upper_source_points.append(PoseObject(x = -0.1794, y = 0.2701, z = 0.3148, roll = -0.389, pitch = -1.422, yaw = -0.169))
-
-
+upper_source_points.append(PoseObject(x = 0.0447, y = 0.3294, z = 0.1311, roll = -2.388, pitch = 1.536, yaw = -0.867))
+upper_source_points.append(PoseObject(x = 0.0474, y = 0.2793, z = 0.1336, roll = 3.007, pitch = 1.494, yaw = -2.095))
+upper_source_points.append(PoseObject(x = -0.0085, y = 0.3261, z = 0.1310, roll = -2.945, pitch = 1.498, yaw = -1.556))
+upper_source_points.append(PoseObject(x = -0.0016, y = 0.2781, z = 0.1353, roll = 2.854, pitch = 1.469, yaw = -1.872))
+upper_source_points.append(PoseObject(x = -0.0586, y = 0.3242, z = 0.1337, roll = 3.092, pitch = 1.479, yaw = -1.490))
+upper_source_points.append(PoseObject(x = -0.0564, y = 0.2740, z = 0.1333, roll = 2.937, pitch = 1.505, yaw = -1.747))
+upper_source_points.append(PoseObject(x = -0.1128, y = 0.3189, z = 0.1311, roll = -3.076, pitch = 1.483, yaw = -1.463))
+upper_source_points.append(PoseObject(x = -0.1065, y = 0.2707, z = 0.1341, roll = 2.945, pitch = 1.441, yaw = -1.734))
+upper_source_points.append(PoseObject(x = -0.1611, y = 0.3136, z = 0.1306, roll = -2.885, pitch = 1.494, yaw = -1.272))
+upper_source_points.append(PoseObject(x = -0.1557, y = 0.2641, z = 0.1303, roll = 2.933, pitch = 1.471, yaw = -1.738))
 
 
 
-# p1_before_pick = PoseObject(x=0.0950, y=0.2824, z=0.1899, roll=1.607, pitch=1.439, yaw=-3.061)
-# p2_release_to_conveyor = PoseObject(x=0.2054, y=0.2859, z=0.1100, roll = 2.603, pitch=1.518, yaw=2.559)
-# p3_after_release_to_conveyor = PoseObject(x=0.2828, y=0.0599, z=0.2115, roll=-2.852, pitch=1.443, yaw=-2.847)
-# p4_before_pick_from_conveyor = PoseObject(x=0.2243, y=-0.3150, z=0.1850, roll=-2.487, pitch=1.492, yaw = -2.406)
-# p5_after_pick_from_conveyor = PoseObject(x=0.2124, y=-0.3206, z=0.0922, roll=-2.255, pitch=1.527, yaw=-2.265)
-# p6_before_release = PoseObject(x=0.1030, y=-0.3072, z=0.1814, roll=-2.371, pitch=1.550, yaw=2.312)
+p1_before_pick = PoseObject(x=0.0950, y=0.2824, z=0.1899, roll=1.607, pitch=1.439, yaw=-3.061)
+p2_release_to_conveyor = PoseObject(x=0.2054, y=0.2859, z=0.1100, roll = 2.603, pitch=1.518, yaw=2.559)
+p3_after_release_to_conveyor = PoseObject(x=0.2828, y=0.0599, z=0.2115, roll=-2.852, pitch=1.443, yaw=-2.847)
+p4_before_pick_from_conveyor = PoseObject(x=0.2243, y=-0.3150, z=0.1850, roll=-2.487, pitch=1.492, yaw = -2.406)
+p5_after_pick_from_conveyor = PoseObject(x=0.2124, y=-0.3206, z=0.0922, roll=-2.255, pitch=1.527, yaw=-2.265)
+p6_before_release = PoseObject(x=0.1030, y=-0.3072, z=0.1814, roll=-2.371, pitch=1.550, yaw=2.312)
 
 #after_pick
 after_pick = PoseObject(x=0.0942, y=0.2502, z=0.3917, roll=-0.135, pitch=-0.902, yaw=-1.806)
@@ -117,7 +114,7 @@ for i in range(0, 10):
     robot.conveyor.run_conveyor(conveyor_id, speed=v, direction=ConveyorDirection.FORWARD)
     robot.wait(4.5)
     robot.conveyor.stop_conveyor(conveyor_id)
-    # robot.arm.move_pose(p1_before_pick)
+    robot.arm.move_pose(p1_before_pick)
 
 robot.arm.move_pose(p3_after_release_to_conveyor)
 
